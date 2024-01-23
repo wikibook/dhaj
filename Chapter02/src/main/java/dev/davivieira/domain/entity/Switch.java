@@ -24,7 +24,7 @@ public class Switch {
     }
 
     public Switch addNetwork(Network network){
-        var networks = new ArrayList<>(Arrays.asList(network));
+        var networks = new ArrayList<>();
         networks.add(network);
         return new Switch(this.switchType, this.switchId, networks, this.address);
     }
